@@ -1,0 +1,24 @@
+extraLargeArray
+doublerAppend = 5.150444 ms
+doublerInsert = 1.099572791 s
+
+largeArray
+doublerAppend = 741.561 μs
+doublerInsert = 8.466787 ms
+
+mediumArray
+doublerAppend = 193.04 μs
+doublerInsert = 206.816 μs
+
+smallArray
+doublerAppend = 142.324 μs
+doublerInsert = 67.554 μs
+
+tinyArray
+doublerAppend = 126.309 μs
+doublerInsert = 58.733 μs
+
+
+The pattern I see is that the bigger arrays take less time to run the append function while for the smaller arrays take less time to run the insert function. 
+
+The append function scales down in speed as you go from larger arrays to smaller, whereas the insert function scales up in speed as you go from larger to smaller arrays. 
